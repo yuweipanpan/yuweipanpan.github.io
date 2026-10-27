@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yuwei is a registered nurse based in New York City." />
+  <title>Yuwei</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #26241f;
+      --accent: #b4552f;
+      --line: #e7e0d5;
+      --max: 52rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration: none; }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    main { padding: 5rem 0 5.5rem; }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 4rem);
+      margin: 0 0 2rem;
+    }
+
+    .lede {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      max-width: 46ch;
+      margin: 0 0 1.75rem;
+    }
+
+    .bio p {
+      max-width: 60ch;
+      margin: 0 0 1.35rem;
+      color: #3a372f;
+    }
+    .bio p:last-child { margin-bottom: 0; }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 2.5rem;
+    }
+    .link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.75rem 1.35rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      transition: transform 0.12s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+    .link:hover { border-color: var(--accent); color: var(--accent); }
+    .link:active { transform: translateY(1px); }
+    .link.resume {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .link.resume:hover {
+      background: #9d4626;
+      border-color: #9d4626;
+      color: #fff;
+    }
+    .link .arrow {
+      font-family: Georgia, serif;
+      transition: transform 0.15s ease;
+    }
+    .link:hover .arrow { transform: translateX(3px); }
+
+  </style>
+</head>
+<body>
+
+  <main id="top">
+    <div class="wrap">
+      <h1>Hi, my name is Yuwei.</h1>
+
+      <p class="lede">I'm a registered nurse based in New York City.</p>
+
+      <div class="bio">
+        <p>My background is in art and design, where I've explored themes of identity, migration, memory, and community. My commitment to direct service, community engagement, and making a tangible difference in people's lives eventually led me to pursue nursing.</p>
+
+        <p>At the heart of both my artistic and nursing practices is a belief in the power of communication, empathy, and human connection. Whether through creative expression or therapeutic communication in patient care, I strive to create spaces where people feel heard, understood, and supported.</p>
+
+        <p>I see art and nursing not as separate paths, but as different ways of connecting with and caring for others. This journey is exactly where I want to be.</p>
+      </div>
+
+      <div class="links">
+        <!-- Placeholder: point this at your real resume (a PDF file or external URL). -->
+        <a class="link resume" href="resume.pdf">
+          <span class="arrow">→</span> resume
+        </a>
+        <a class="link" href="mailto:yuweipan.nursing@gmail.com">
+          <span class="arrow">→</span> yuweipan.nursing@gmail.com
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
