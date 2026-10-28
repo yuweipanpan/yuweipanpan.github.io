@@ -1,42 +1,171 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yuwei Pan is a registered nurse based in New York City with a background in art and design.">
-  <title>Yuwei Pan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yuwei Pan | Registered Nurse</title>
+  <meta name="description" content="Yuwei Pan is a registered nurse based in New York City, with a background in art and design.">
+
+  <!-- Google Fonts: Lora -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #fff; color: #242424; font-family: 'Lora', Georgia, serif; font-size: 15px; line-height: 1.65; }
-    main { width: min(100% - 48px, 1040px); margin: 0 auto; padding: 150px 0 100px; display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 34px; align-items: start; }
-    .portrait { display: block; width: 100%; height: auto; }
-    p { margin: 0 0 18px; }
-    .links { margin-top: 20px; }
-    .links p { margin-bottom: 8px; }
-    a { color: inherit; text-decoration: none; border-bottom: 1px solid #aaa; }
-    a:hover, a:focus-visible { border-bottom-color: #222; }
-    @media (max-width: 950px) {
-      main { width: min(100% - 40px, 620px); padding: 48px 0 70px; grid-template-columns: 1fr; gap: 28px; }
-      .portrait { width: 290px; max-width: 100%; }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #222222;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 140px 40px 80px;
+    }
+
+    .bio-layout {
+      display: grid;
+      grid-template-columns: 25% minmax(0, 1fr);
+      gap: 40px;
+      align-items: start;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .bio-text p {
+      margin: 0 0 20px;
+    }
+
+    .bio-text strong {
+      font-weight: 700;
+    }
+
+    .links {
+      margin-top: 24px;
+    }
+
+    .links p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid #888;
+      transition: border-color 0.2s ease;
+    }
+
+    a:hover {
+      border-bottom-color: #222;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 700px) {
+      .container {
+        padding: 50px 24px;
+      }
+
+      .bio-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .profile-image {
+        max-width: 280px;
+      }
+
+      body {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <img class="portrait" src="Yuwei_Pan_bio_pic2.png" alt="Portrait of Yuwei Pan">
-    <section aria-label="About Yuwei">
-      <p><strong>Hi, my name is Yuwei.</strong> I'm a registered nurse based in New York City.</p>
-      <p>My background is in art and design, where I've explored themes of identity, migration, memory, and community. My commitment to direct service, accessible education, and making a tangible difference in people's lives eventually led me to pursue nursing.</p>
-      <p>At the heart of both my artistic and nursing practices is a belief in the power of communication, empathy, and human connection. Whether through creative expression or therapeutic communication in patient care, I strive to create spaces where people feel heard, understood, and supported.</p>
-      <p>I see art and nursing not as separate paths, but as different ways of connecting with and caring for others. This journey is exactly where I want to be.</p>
-      <div class="links">
-        <p>👉🏽 <a href="Yuwei%20Pan%20resume%20fall%202026.pdf" target="_blank" rel="noopener noreferrer">resume</a></p>
-        <p>👉🏽 <a href="mailto:yuweipan.nursing@gmail.com">yuweipan.nursing@gmail.com</a></p>
+
+  <main class="container">
+    <div class="bio-layout">
+
+      <!-- Left: Profile photo -->
+      <div class="image-column">
+        <img
+          class="profile-image"
+          src="Yuwei_Pan_bio_pic2.png"
+          alt="Portrait of Yuwei Pan"
+        >
       </div>
-    </section>
+
+      <!-- Right: Biography -->
+      <div class="bio-text">
+
+        <p>
+          <strong>Hi, my name is Yuwei.</strong>
+          I'm a registered nurse based in New York City.
+        </p>
+
+        <p>
+          My background is in art and design, where I've
+          explored themes of identity, migration, memory,
+          and community. My commitment to direct service,
+          accessible education, and making a tangible
+          difference in people's lives eventually led me
+          to pursue nursing.
+        </p>
+
+        <p>
+          At the heart of both my artistic and nursing
+          practices is a belief in the power of
+          communication, empathy, and human connection.
+          Whether through creative expression or
+          therapeutic communication in patient care,
+          I strive to create spaces where people feel
+          heard, understood, and supported.
+        </p>
+
+        <p>
+          I see art and nursing not as separate paths,
+          but as different ways of connecting with and
+          caring for others. This journey is exactly
+          where I want to be.
+        </p>
+
+        <!-- Resume and contact -->
+        <div class="links">
+
+          <p>
+            👉🏽 <a
+              href="Yuwei%20Pan%20resume%20fall%202026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >resume</a>
+          </p>
+
+          <p>
+            👉🏽 <a href="mailto:yuweipan.nursing@gmail.com">
+              yuweipan.nursing@gmail.com
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
   </main>
+
 </body>
 </html>
